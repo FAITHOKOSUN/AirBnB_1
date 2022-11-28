@@ -1,13 +1,17 @@
 #!/usr/bin/python3
-"""This module creates a User class"""
+
+"""This file defines the UserModel class
+It inherits from the BaseModel
+"""
 
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """Class for managing user objects"""
+    """The User Model"""
 
-    email = ""
-    password = ""
-    first_name = ""
-    last_name = ""
+    # Attributes
+    email: str = ""
+    password: str = ""
+    first_name: str = ""
+    last_name: str = ""
